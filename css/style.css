@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-bg: #130f40;
+    --color-primary: #22a6b3;
+    --color-border: #535c68;
+    --color-text: #202468;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 350px;
+    width: 500px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 8px var(--color-bg);
+}
+
+.emojis{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.heading{
+    color: var(--color-bg);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.button{
+    height: 42px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--color-bg);
+    color: var(--color-primary);
+    box-shadow: inset 0 2px 4px var(--color-primary);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+    
+}
+
+.emojis .emoji{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 13px;
+    color: var(--color-bg);
+    box-shadow: inset 0 2px 8px var(--color-bg);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+
+.emoji .img-1,.img-2,.img-3{
+    font-size: 28px;
+}
+
+.emoji .text-1,
+.text-2,
+.text-3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.feedback{
+    text-align: center;
+    color: var(--color-bg);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.emoji:hover,
+.emoji:focus,
+.emoji.active{
+    background: var(--color-bg);
+    color: white;
+    box-shadow: inset 0 2px 6px var(--color-primary);
+}
+
+.button:hover{
+    background: var(--color-text);
+}
+
+.warn{
+    color: rgb(102, 1, 1);
+    font-weight: 500;
+    font-size: small;
+}
